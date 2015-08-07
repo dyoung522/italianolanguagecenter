@@ -1,2 +1,7 @@
 it:
-  hello: "Ciao mondo"
+  hello: ciao
+  welcome: Benvenuti in Italiano - Benvenuti in Italia!
+  introduction:
+    - Entra nel mondo magico d'Italia!
+    - Scoprite la lingua - sperimentare la cultura!
+    - Impara l'englese con i nativi qui e in Toscana!
