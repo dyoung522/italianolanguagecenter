@@ -1,7 +1,15 @@
 it:
   hello: ciao
-  welcome: Benvenuti in Italiano - Benvenuti in Italia!
+  welcome: Benvenuti a Italiano!
+  tagline: Il Mondo parla Italiano!
   introduction:
     - Entra nel mondo magico d'Italia!
     - Scoprite la lingua - sperimentare la cultura!
     - Impara l'englese con i nativi qui e in Toscana!
+  menu:
+    login: Accesso
+    welcome: Benvenuti
+    classes: Corsi
+    events: Eventi
+    other: Altre Cose
+

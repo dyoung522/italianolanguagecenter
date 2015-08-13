@@ -1,20 +1,16 @@
 var Welcome = React.createClass({
-  renderIntroduction: function() {
-    var key = 0;
-    return (
-      I18n.t('introduction').map( function(line) {
-        return <p key={key++}>{line}</p>
-      })
-    )
-  },
-
   render: function() {
     return (
-      <div className="col-md-8 col-md-offset-4 text-center">
-        <h1>{I18n.t('welcome')}</h1>
-        <h2>{I18n.t('tagline')}</h2>
-        <h3>{this.renderIntroduction()}</h3>
-      </div>
+      <section id="welcome" className="welcome-section jumbotron">
+        <div className="container">
+          <div className="row">
+            <div className="col-lg-12">
+              <h1>{I18n.t('welcome', {locale: 'en'})}</h1>
+              <h1>{I18n.t('welcome', {locale: 'it'})}</h1>
+            </div>
+          </div>
+        </div>
+      </section>
     )
   }
 });

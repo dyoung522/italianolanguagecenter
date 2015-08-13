@@ -1,1 +1,1 @@
-// This is where we'll put our helper functions
+//= require_tree ./utils

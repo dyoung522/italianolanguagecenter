@@ -12,10 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require jquery.easing
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require react
 //= require react_ujs
 //= require i18n/translations
+//= require utils
 //= require components
-//= require_tree .
+//= require main.js

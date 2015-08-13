@@ -1,9 +1,16 @@
 en:
   hello: hello
-  welcome: Welcome to Italiano - Welcome to Italy!
-  tagline: Il Mondo parla Italiano! The World speaks Italian!
+  welcome: Welcome to Italian!
+  tagline: The World speaks Italian!
   introduction:
     - Enter the magic world of Italy!
-    - Discover the Language - Experience the Culture!
+    - Discover the Language!
+    - Experience the Culture!
     - Learn Italian with the natives here and in Tuscany!
+  menu:
+    login: Login
+    welcome: Welcome
+    classes: Classes
+    events: Events
+    other: Other Stuff
 

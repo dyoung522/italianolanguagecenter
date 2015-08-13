@@ -1,0 +1,95 @@
+body, html { width: 100%; height: 100%; }
+
+body {
+  background-image: url(image_path('background.jpg'));
+  background-size: 100vw;
+  background-position: 50%;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-color: $brand-color2;
+}
+
+//
+// Bootstrap Overrides
+//
+.well {
+  display: block;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 100%;
+}
+
+.main-container {
+  //@extend .container;
+  //background: transparentize(white, .5);
+}
+
+.text-box {
+  @include box-shadow($gray-dark 1px 2px 7px);
+  border-radius: 5px;
+  padding: 25px;
+  background: transparentize($brand-color5-light, .10);
+}
+
+//
+// Navbar Page Scroller
+//
+
+@media(min-width:767px) {
+  .navbar {
+    padding: 20px 0;
+    -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
+    transition: background .5s ease-in-out,padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+  }
+}
+
+.welcome-section {
+  @include box-shadow(black 0px 0px 15px);
+  margin-bottom: 0;
+  height: 100%;
+  line-height: 100%;
+  padding-top: 85px;
+  padding-bottom: 10px;
+  text-align: center;
+  color: $brand-color5-light;
+  background: transparentize($brand-color5, .1);
+  border: none;
+  z-index: 100;
+  position: relative;
+}
+
+.intro-section {
+  padding: 0;
+  position: relative;
+  margin-top: 25%;
+
+  .intro-home {
+    @extend .text-box;
+    padding: 50px;
+    background: transparentize($brand-color5-light, .15);
+  }
+}
+
+.page-section {
+  background: $brand-color5-light;
+}
+
+section {
+  height: 100vh;
+  padding-top: 50px;
+
+  .title {
+    @extend .well, .well-sm;
+    @include box-shadow($gray-dark 1px 2px 5px);
+    color: $brand-color2;
+    text-align: center;
+  }
+}
+

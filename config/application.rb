@@ -6,7 +6,7 @@ require 'rails/all'
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
-module ItalianolanguagecenterCom
+module Italianolanguagecenter
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
@@ -25,5 +25,8 @@ module ItalianolanguagecenterCom
 
     # Don't raise an exception if the requested locale doesn't exist
     I18n.config.enforce_available_locales = false
+
+    # Enable React Addons
+    config.react.addons = true
   end
 end
