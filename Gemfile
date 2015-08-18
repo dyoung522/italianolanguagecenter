@@ -13,8 +13,10 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bcrypt', '~> 3.1.7'
 gem 'i18n-js', '>= 3.0.0.rc11'
-gem 'unicorn'
+gem 'foreman'
+gem 'puma'
 
+gem 'rails_12factor', group: :production
 gem 'sdoc', '~> 0.4.0', group: :doc
 
 group :development, :test do
