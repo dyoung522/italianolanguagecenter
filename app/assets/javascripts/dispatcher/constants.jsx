@@ -1,0 +1,5 @@
+var appConstants = {
+  ADD_CLASS: "ADD_CLASS",
+  UPDATE_CLASS: "UPDATE_CLASS",
+  REMOVE_CLASS: "REMOVE_CLASS"
+};

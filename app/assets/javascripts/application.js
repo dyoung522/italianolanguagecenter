@@ -17,7 +17,9 @@
 //= require bootstrap-sprockets
 //= require react
 //= require react_ujs
+//= require flux
 //= require i18n/translations
 //= require utils
+//= require stores
 //= require components
-//= require main.js
+//= require main
