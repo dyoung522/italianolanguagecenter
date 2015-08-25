@@ -1,3 +1,5 @@
+var React = require('react');
+
 var Introduction = React.createClass({
   renderIntroduction: function() {
     var key = 0;
@@ -27,3 +29,5 @@ var Introduction = React.createClass({
     )
   }
 });
+
+module.exports = Introduction;

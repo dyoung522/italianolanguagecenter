@@ -1,3 +1,5 @@
+var React = require('react');
+
 var PageSection = React.createClass({
   render: function() {
     return (
@@ -14,3 +16,5 @@ var PageSection = React.createClass({
     )
   }
 });
+
+module.exports = PageSection;

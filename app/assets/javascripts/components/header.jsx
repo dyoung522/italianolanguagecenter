@@ -1,3 +1,5 @@
+var React = require('react');
+
 var Header = React.createClass({
   _onPageScrollClick: function(event) {
     var anchor = React.findDOMNode(event.target);
@@ -52,3 +54,5 @@ var Header = React.createClass({
   }
 
 });
+
+module.exports = Header;

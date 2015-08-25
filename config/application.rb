@@ -26,7 +26,11 @@ module Italianolanguagecenter
     # Don't raise an exception if the requested locale doesn't exist
     I18n.config.enforce_available_locales = false
 
-    # Enable React Addons
-    config.react.addons = true
+    # React Config
+    config.react.variant      = :production
+    config.react.addons       = true
+
+    # Browserify Config
+    config.browserify_rails.commandline_options = "--transform reactify --extension=\".jsx\""
   end
 end

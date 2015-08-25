@@ -1,3 +1,5 @@
+var React = require('react');
+
 var Welcome = React.createClass({
   render: function() {
     return (
@@ -14,3 +16,5 @@ var Welcome = React.createClass({
     )
   }
 });
+
+module.exports = Welcome;

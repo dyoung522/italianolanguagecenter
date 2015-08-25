@@ -1,3 +1,7 @@
+var objectAssign = require('object-assign');
+var EventEmitter = require('events').EventEmitter;
+var AppDispatcher = require('dispatcher/dispatcher');
+
 var CHANGE_EVENT = 'change';
 
 var _store = {
@@ -52,3 +56,5 @@ AppDispatcher.register(function(payload){
       return true;
   }
 });
+
+module.exports = classStore;

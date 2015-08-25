@@ -1,3 +1,9 @@
+var React = require('react');
+var Header = require('components/header');
+var Welcome = require('components/welcome');
+var Introduction = require('components/introduction');
+var PageSection = require('components/page-section');
+
 var App = React.createClass({
   render: function() {
     return (
@@ -20,3 +26,5 @@ var App = React.createClass({
     )
   }
 });
+
+React.render(<App />, document.getElementById('react-container'));

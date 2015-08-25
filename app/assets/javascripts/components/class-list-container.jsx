@@ -1,3 +1,5 @@
+var React = require('react');
+
 var ClassListContainer = React.createClass({
 
   getInitialState: function(){
@@ -44,3 +46,5 @@ var ClassListContainer = React.createClass({
     )
   }
 });
+
+module.exports = ClassListContainer;
