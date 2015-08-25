@@ -1,19 +1,19 @@
 {
   "name": "ItalianoLanguageCenter",
   "dependencies": {
-    "flux": "^2.1.1",
-    "object-assign": "^4.0.1",
-    "react": "^0.13.3",
-    "react-tools": "^0.13.3"
-  },
-  "devDependencies": {
     "bootstrap-sass": "^3.3.5",
     "browserify": "~>6.3",
-    "browserify-incremental": "^1.4.0",
     "browserify-shim": "^3.8.2",
-    "jest-cli": "^0.5.0",
+    "browserify-incremental": "^1.4.0",
+    "flux": "^2.1.1",
     "jquery": "^2.1.4",
+    "object-assign": "^4.0.1",
+    "react": "^0.13.3",
+    "react-tools": "^0.13.3",
     "reactify": "^0.17.1"
+  },
+  "devDependencies": {
+    "jest-cli": "^0.5.0"
   },
   "engines": {
     "node": ">=0.10.0"
