@@ -1,4 +1,5 @@
 var React = require('react');
+var classStore = require('stores/class-store');
 
 var ClassListContainer = React.createClass({
 
@@ -36,13 +37,17 @@ var ClassListContainer = React.createClass({
 
   render: function(){
     return (
-      <div className="col-sm-6 col-md-offset-3">
-        <div className="col-sm-12">
-          <h3 className="text-center"> Class List </h3>
-          <AddItem add={this.handleAddItem}/>
-          <ClassList items={this.state.data} update={this.handleUpdateItem} remove={this.handleRemoveItem}/>
+      <section id='classes' className='classes-section page-section'>
+        <div className="col-sm-6 col-md-offset-3">
+          <div className="col-sm-12">
+            <h3 className="text-center"> Class List </h3>
+            {/*
+              <AddItem add={this.handleAddItem}/>
+              <ClassList items={this.state.data} update={this.handleUpdateItem} remove={this.handleRemoveItem}/>
+             */}
+          </div>
         </div>
-      </div>
+      </section>
     )
   }
 });

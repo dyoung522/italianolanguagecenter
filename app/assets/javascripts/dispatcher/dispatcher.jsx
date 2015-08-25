@@ -1,3 +1,4 @@
+var Flux = require('flux');
 var Dispatcher = Flux.Dispatcher;
 var AppDispatcher = new Dispatcher();
 

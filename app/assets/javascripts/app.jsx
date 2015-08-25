@@ -1,8 +1,9 @@
-var React = require('react');
-var Header = require('components/header');
-var Welcome = require('components/welcome');
-var Introduction = require('components/introduction');
-var PageSection = require('components/page-section');
+var React = require('react'),
+    Header = require('components/header'),
+    Welcome = require('components/welcome'),
+    Introduction = require('components/introduction'),
+    PageSection = require('components/page-section'),
+    ClassListContainer = require('components/class-list-container');
 
 var App = React.createClass({
   render: function() {
@@ -12,9 +13,7 @@ var App = React.createClass({
         <Welcome />
         <div className="main-container">
           <Introduction />
-          <PageSection id="classes">
-            <div className="text-center"><h2>Everything for classes would go here</h2></div>
-          </PageSection>
+          <ClassListContainer />
           <PageSection id="events">
             <div className="text-center"><h2>Everything for Events would go here</h2></div>
           </PageSection>
