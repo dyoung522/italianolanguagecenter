@@ -8,17 +8,16 @@
   <%= csrf_meta_tags %>
 </head>
 
+<script type="text/javascript">
+    I18n.defaultLocale = "<%= I18n.default_locale %>";
+    I18n.locale = "<%= I18n.locale %>";
+    I18n.fallbacks = "en";
+</script>
+
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
 <%= yield %>
 
 </body>
 </html>
-
-<!-- ToDo: Fix I18n locale selection (can't change via ?locale=??)-->
-<script type="text/javascript">
-    I18n.defaultLocale = "<%= I18n.default_locale %>";
-    I18n.locale = "<%= I18n.locale %>";
-    I18n.fallbacks = "en";
-</script>
 

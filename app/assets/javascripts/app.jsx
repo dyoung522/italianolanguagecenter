@@ -1,9 +1,9 @@
-var React = require('react'),
-    Header = require('components/header'),
-    Welcome = require('components/welcome'),
+var Header       = require('components/header'),
     Introduction = require('components/introduction'),
-    PageSection = require('components/page-section'),
-    ClassListContainer = require('components/class-list-container');
+    PageSection  = require('components/page-section'),
+    React        = require('react'),
+    SectionList  = require('components/page-section-list'),
+    Welcome      = require('components/welcome');
 
 var App = React.createClass({
   render: function() {
@@ -11,15 +11,10 @@ var App = React.createClass({
       <div>
         <Header />
         <Welcome />
+
         <div className="main-container">
           <Introduction />
-          <ClassListContainer />
-          <PageSection id="events">
-            <div className="text-center"><h2>Everything for Events would go here</h2></div>
-          </PageSection>
-          <PageSection id="other">
-            <div className="text-center"><h2>Add as many sections as are needed</h2></div>
-          </PageSection>
+          <SectionList />
         </div>
       </div>
     )
