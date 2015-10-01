@@ -19,8 +19,8 @@ gem 'i18n-js', '>= 3.0.0.rc11'
 gem 'foreman'
 gem 'puma'
 
-gem 'rails_12factor', group: :production
-gem 'sdoc', '~> 0.4.0', group: :doc
+gem 'rails_12factor', :group => :production
+gem 'sdoc', '~> 0.4.0', :group => :doc
 
 group :development, :test do
   gem 'byebug'
