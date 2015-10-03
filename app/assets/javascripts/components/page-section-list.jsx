@@ -1,5 +1,4 @@
-var _            = require('lodash'),
-    PageSection  = require('components/page-section'),
+var PageSection  = require('components/page-section'),
     React        = require('react'),
     sectionStore = require('stores/section-store');
 

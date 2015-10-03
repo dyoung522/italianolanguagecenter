@@ -12,7 +12,6 @@ var Header = React.createClass({
   },
 
   render: function() {
-    console.log('locale', I18n.locale);
     return (
       <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
         <div className="container">
@@ -35,13 +34,10 @@ var Header = React.createClass({
               <li className="hidden">
                 <a className="page-scroll" href="#page-top"></a>
               </li>
-              <li className="hidden">
-                <a className="page-scroll" href="#welcome"></a>
-              </li>
-              <li> <a onClick={this._onPageScrollClick} href="#intro">{I18n.t('menu.welcome')}</a> </li>
-              <li> <a onClick={this._onPageScrollClick} href="#classes">{I18n.t('menu.classes')}</a> </li>
-              <li> <a onClick={this._onPageScrollClick} href="#events">{I18n.t('menu.events')}</a> </li>
-              <li> <a onClick={this._onPageScrollClick} href="#more">{I18n.t('menu.more')}</a> </li>
+              <li><a onClick={this._onPageScrollClick} href="#welcome">{I18n.t('menu.intro')}</a></li>
+              <li><a onClick={this._onPageScrollClick} href="#classes">{I18n.t('menu.classes')}</a></li>
+              <li><a onClick={this._onPageScrollClick} href="#events">{I18n.t('menu.events')}</a></li>
+              <li><a onClick={this._onPageScrollClick} href="#more">{I18n.t('menu.more')}</a></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li>

@@ -1,19 +1,18 @@
-var Header       = require('components/header'),
-    Introduction = require('components/introduction'),
-    PageSection  = require('components/page-section'),
-    React        = require('react'),
-    SectionList  = require('components/page-section-list'),
-    Welcome      = require('components/welcome');
+var Header        = require('components/header'),
+    React         = require('react'),
+    SectionList   = require('components/page-section-list'),
+    Welcome       = require('components/welcome'),
+    WelcomeHeader = require('components/welcome-header');
 
 var App = React.createClass({
   render: function() {
     return (
       <div>
         <Header />
-        <Welcome />
+        <WelcomeHeader />
 
         <div className="main-container">
-          <Introduction />
+          <Welcome />
           <SectionList />
         </div>
       </div>
