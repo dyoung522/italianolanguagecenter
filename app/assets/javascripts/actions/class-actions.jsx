@@ -1,20 +1,23 @@
-var classActions = {
-  addItem: function(item){
+var appConstants  = require('constants'),
+    AppDispatcher = require('../dispatcher/dispatcher');
+
+module.exports = {
+  addItem:    function(item) {
     AppDispatcher.handleAction({
       actionType: appConstants.ADD_CLASS,
-      data: item
+      data:       item
     });
   },
-  updateItem: function(item){
+  updateItem: function(item) {
     AppDispatcher.handleAction({
       actionType: appConstants.UPDATE_CLASS,
-      data: item
+      data:       item
     });
   },
-  removeItem: function(index){
+  removeItem: function(index) {
     AppDispatcher.handleAction({
       actionType: appConstants.REMOVE_CLASS,
-      data: index
+      data:       index
     })
   }
 };

@@ -31,6 +31,6 @@ module Italianolanguagecenter
     config.react.addons       = true
 
     # Browserify Config
-    config.browserify_rails.commandline_options = "--transform reactify --extension=\".jsx\""
+    config.browserify_rails.commandline_options = "-t es6ify -t reactify --extension=\".jsx\""
   end
 end

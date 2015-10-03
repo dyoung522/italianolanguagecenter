@@ -1,20 +1,13 @@
 var React = require('react');
 
-var PageSection = React.createClass({
+module.exports = React.createClass({
+  propTypes: {
+    section: React.PropTypes.object.isRequired
+  },
+
   render: function() {
     return (
-      <section id={this.props.id} className={this.props.id + "-section page-section"}>
-        <div className="container">
-          <div className="row">
-            <div>
-              <h1 className="title">{I18n.t('menu.' + this.props.id)}</h1>
-              {this.props.children}
-            </div>
-          </div>
-        </div>
-      </section>
+      <h1 className="title">{I18n.t('menu.' + this.props.section.name)}</h1>
     )
   }
 });
-
-module.exports = PageSection;

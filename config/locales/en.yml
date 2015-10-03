@@ -1,16 +1,25 @@
 en:
+  header: 
+    tagline: "The World speaks Italian!"
+    welcome: "Welcome to Italian!"
   hello: hello
-  welcome: Welcome to Italian!
-  tagline: The World speaks Italian!
-  introduction:
-    - Enter the magic world of Italy!
-    - Discover the Language!
-    - Experience the Culture!
-    - Learn Italian with the natives here and in Tuscany!
-  menu:
-    login: Login
-    welcome: Welcome
+  introduction: 
+    - "Enter the magic world of Italy!"
+    - "Discover the Language!"
+    - "Experience the Culture!"
+    - "Learn Italian with the natives here and in Tuscany!"
+  menu: 
     classes: Classes
     events: Events
-    other: Other Stuff
-
+    intro: Welcome
+    login: Login
+    more: More
+  welcome:
+    header: "Welcome to the Italiano Language Center"
+    message: 
+      - "We hope you enjoy your stay."
+      - "Lorem ipsum dolor sit amet, et usu movet recusabo. Et tibique dissentias definitionem cum, per labitur referrentur ut. No nullam intellegam sed, at solet maiorum mea, in solet volumus invenire mel. No usu accumsan postulant theophrastus, noster tamquam accusam ad vis."
+      - "Per accumsan indoctum et, mel at impetus fabulas. Ei sea integre platonem salutandi, id maiorum pertinax duo, eam in duis iisque. Erant semper utamur sed ad, sit wisi doming eirmod ne. Feugait accommodare te mel, at eum modo erant diceret. Officiis adipisci vix ea."
+      - "No pro aeterno fuisset. Nihil minimum suscipit ut has, te laoreet iudicabit pro. Has no simul dicunt complectitur. In suas rebum adipiscing vel, et eos insolens petentium mediocritatem, id usu error scripta. Sit ornatus appellantur te. Te vis nonumy everti phaedrum, te ubique consectetuer nec."
+      - "Habeo impetus erroribus has ne. Est eu omnes mollis constituto, at vero dicam appellantur eam. Ei decore dolore has. An mei quis illud delicata, ut graece reprimique voluptatibus qui."
+      - "Suscipit tractatos complectitur ea cum, te vix singulis splendide. Solet omittantur no vim, errem efficiendi usu id. Ea mea repudiare signiferumque, no vis quot audiam deserunt. Et quo suas option, erat invenire salutatus an sea. Has commodo albucius facilisis et, id velit graece vix."
