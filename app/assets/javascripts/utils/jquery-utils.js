@@ -5,12 +5,4 @@ $(window).scroll(function() {
   } else {
     $('.navbar-fixed-top').removeClass('top-nav-collapse');
   }
-
-  if ( ($('.intro').offset().top - $(window).scrollTop()) < ($(window).height() * .50) ) {
-    $('.intro').stop().fadeTo(100, 0);
-    $('.welcome').stop().fadeTo(100, 1);
-  } else {
-    $('.welcome').stop().fadeTo(100, 0);
-    $('.intro').stop().fadeTo(100, 1);
-  }
 });

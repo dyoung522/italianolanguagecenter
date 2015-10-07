@@ -1,15 +1,7 @@
-var React = require('react');
+import React from 'react';
+import { stringToHtml } from '../helpers/utils';
 
 var Introduction = React.createClass({
-  renderIntroduction: function() {
-    var key = 0;
-    return (
-      I18n.t('introduction').map(function(line) {
-        return <p key={key++}>{line}</p>
-      })
-    )
-  },
-
   render: function() {
     return (
       <div id="intro" className="intro">
@@ -19,12 +11,11 @@ var Introduction = React.createClass({
             &nbsp;
             {I18n.t('header.tagline', { locale: 'it' })}
           </h2>
-
-          <h3>{this.renderIntroduction()}</h3>
+          <h3>{stringToHtml(I18n.t('introduction'))}</h3>
         </div>
       </div>
     )
   }
 });
 
-module.exports = Introduction;
+export default Introduction;

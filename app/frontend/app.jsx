@@ -1,8 +1,8 @@
-var Header        = require('components/header'),
-    React         = require('react'),
-    SectionList   = require('components/page-section-list'),
-    Welcome       = require('components/welcome'),
-    WelcomeHeader = require('components/welcome-header');
+import Header        from './components/header.jsx';
+import React         from 'react';
+import SectionList   from './components/page-section-list.jsx';
+import Welcome       from './components/welcome.jsx';
+import WelcomeHeader from './components/welcome-header.jsx';
 
 var App = React.createClass({
   render: function() {

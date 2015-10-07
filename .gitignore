@@ -11,5 +11,8 @@
 /log/*
 !/log/.keep
 /tmp
-/public/assets
 /node_modules
+/public/assets
+/npm-debug.log
+/railways.cache
+/app/assets/javascripts/fe

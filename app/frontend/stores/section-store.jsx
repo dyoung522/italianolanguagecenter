@@ -1,7 +1,7 @@
-var appConstants  = require('dispatcher/constants'),
-    AppDispatcher = require('dispatcher/dispatcher'),
-    EventEmitter  = require('events').EventEmitter,
-    objectAssign  = require('object-assign');
+import appConstants  from '../dispatcher/constants.jsx';
+import AppDispatcher from '../dispatcher/dispatcher.jsx';
+import { EventEmitter } from 'events';
+import objectAssign  from 'object-assign';
 
 var CHANGE_EVENT = 'change';
 
@@ -62,4 +62,4 @@ AppDispatcher.register(function(payload) {
   }
 });
 
-module.exports = sectionStore;
+export default sectionStore;
