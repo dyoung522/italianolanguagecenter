@@ -1,8 +1,9 @@
-import React from 'react';
+import React    from 'react';
+import ReactDOM from 'react-dom';
 
 var Header = React.createClass({
   _onPageScrollClick: function(event) {
-    var anchor = React.findDOMNode(event.target);
+    var anchor = ReactDOM.findDOMNode(event.target);
 
     $('html, body').stop().animate({
       scrollTop: $(anchor.getAttribute('href')).offset().top

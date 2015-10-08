@@ -33,8 +33,9 @@
     "jquery": "^2.1.4",
     "lodash": "^3.10.1",
     "node-uuid": "^1.4.3",
-    "react": "^0.13.3",
-    "react-bootstrap": "^0.25.1"
+    "react": "^0.14.0",
+    "react-bootstrap": ">=0.26.0",
+    "react-dom": "^0.14.0"
   },
   "engines": {
     "node": ">=3.3.0"
@@ -44,7 +45,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "lint": "eslint . --ext .js --ext .jsx ./app/frontend",
+    "lint": "eslint --ext .js --ext .jsx ./app/",
     "start": "webpack-dev-server --hot --inline --progress --content-base build",
     "test": "node ./node_modules/jest-cli/bin/jest.js"
   },

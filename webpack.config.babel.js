@@ -1,6 +1,5 @@
 /* eslint quotes: 0 */
 import Clean             from 'clean-webpack-plugin';
-import ExtractTextPlugin from 'extract-text-webpack-plugin';
 import merge             from 'webpack-merge';
 import path              from 'path';
 import pkg               from './package.json';
@@ -25,32 +24,27 @@ var common = {
   },
 
   plugins: [
-    new Clean(['app/assets/javascripts/fe']),
+    new Clean(['app/assets/javascripts/fe'])
   ]
 };
 
 if ( TARGET === 'start' || !TARGET ) {
   module.exports = merge(common, {
-    devTool: 'eval',
+    devTool:   '#eval-source-map',
     devServer: {
-      colors: true,
+      colors:             true,
       historyApiFallback: true,
-      hot: true,
-      inline: true,
-      progress: true
+      hot:                true,
+      inline:             true,
+      progress:           true
     },
 
     module: {
       preLoaders: [
         { test: /\.jsx?$/, loader: 'eslint-loader', include: MAIN_PATH }
       ],
-      loaders: [
+      loaders:    [
         { test: /\.jsx?$/, loaders: ['react-hot', 'babel'], include: MAIN_PATH },
-        {
-          test: /\.s?[ca]ss$/,
-          loader: ExtractTextPlugin.extract('style', 'css!csslint!sass'),
-          include: path.resolve(MAIN_PATH, 'stylesheets')
-        }
       ]
     }
   })
@@ -58,18 +52,7 @@ if ( TARGET === 'start' || !TARGET ) {
 
 if ( TARGET === 'build' ) {
   module.exports = merge(common, {
-    entry: { app: path.resolve(MAIN_PATH, 'app.jsx'), vendor: Object.keys(pkg.dependencies) },
-
-    devtool: 'source-map',
-
-    module: {
-      loaders: [{
-        test: /\.s?[ca]ss$/,
-        loader: ExtractTextPlugin.extract('css?sourceMap!' + 'sass?sourceMap'),
-        include: path.resolve(MAIN_PATH, 'stylesheets')
-      }]
-    },
-
+    devtool: '#source-map',
     plugins: [
       new webpack.DefinePlugin({
         'process.env': { 'NODE_ENV': JSON.stringify('production') }
