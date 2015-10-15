@@ -1,8 +1,9 @@
-var React = require('react');
+import React    from 'react';
+import ReactDOM from 'react-dom';
 
 var Header = React.createClass({
   _onPageScrollClick: function(event) {
-    var anchor = React.findDOMNode(event.target);
+    var anchor = ReactDOM.findDOMNode(event.target);
 
     $('html, body').stop().animate({
       scrollTop: $(anchor.getAttribute('href')).offset().top
@@ -11,6 +12,7 @@ var Header = React.createClass({
     event.preventDefault();
   },
 
+  // TODO: Refactor this using React (esp. for sections)
   render: function() {
     return (
       <nav className="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -36,8 +38,6 @@ var Header = React.createClass({
               </li>
               <li><a onClick={this._onPageScrollClick} href="#welcome">{I18n.t('menu.intro')}</a></li>
               <li><a onClick={this._onPageScrollClick} href="#classes">{I18n.t('menu.classes')}</a></li>
-              <li><a onClick={this._onPageScrollClick} href="#events">{I18n.t('menu.events')}</a></li>
-              <li><a onClick={this._onPageScrollClick} href="#more">{I18n.t('menu.more')}</a></li>
             </ul>
             <ul className="nav navbar-nav navbar-right">
               <li>
@@ -52,4 +52,4 @@ var Header = React.createClass({
 
 });
 
-module.exports = Header;
+export default Header;

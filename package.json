@@ -1,35 +1,57 @@
 {
   "name": "ItalianoLanguageCenter",
-  "dependencies": {
-    "bootstrap-sass": "^3.3.5",
-    "browserify": "~>6.3",
-    "browserify-incremental": "^1.4.0",
-    "browserify-shim": "^3.8.2",
-    "es6ify": "^1.6.0",
-    "flux": "^2.1.1",
-    "jquery": "^2.1.4",
-    "object-assign": "^4.0.1",
-    "react": "^0.13.3",
-    "react-tools": "^0.13.3",
-    "reactify": "^0.17.1"
-  },
   "devDependencies": {
-    "babel-eslint": "^4.1.3",
-    "es6ify": "^1.6.0",
-    "eslint": "^1.5.1",
-    "eslint-plugin-react": "^3.5.1",
-    "jest-cli": "^0.5.0",
-    "lodash": "^3.10.1"
+    "babel-core": "^5.8.23",
+    "babel-eslint": "^4.1.0",
+    "babel-loader": "^5.3.2",
+    "bootstrap-sass": "^3.3.5",
+    "clean-webpack-plugin": "^0.1.3",
+    "css-loader": "^0.16.0",
+    "csslint": "^0.10.0",
+    "csslint-loader": "^0.2.1",
+    "eslint": "^1.3.1",
+    "eslint-loader": "^1.0.0",
+    "eslint-plugin-react": "^3.3.0",
+    "extract-text-webpack-plugin": "^0.8.2",
+    "file-loader": "^0.8.4",
+    "flux": "^2.1.1",
+    "html-webpack-plugin": "^1.6.1",
+    "moment": "^2.10.6",
+    "node-libs-browser": "^0.5.2",
+    "node-sass": "^3.3.2",
+    "object-assign": "^4.0.1",
+    "path": "^0.11.14",
+    "react-hot-loader": "^1.3.0",
+    "sass-loader": "^2.0.1",
+    "style-loader": "^0.12.3",
+    "url-loader": "^0.5.6",
+    "webpack": "^1.12.0",
+    "webpack-dev-server": "^1.10.1",
+    "webpack-merge": "^0.1.3"
+  },
+  "dependencies": {
+    "i18n-js": "^1.0.0",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1",
+    "node-uuid": "^1.4.3",
+    "react": "^0.14.0",
+    "react-bootstrap": ">=0.26.0",
+    "react-dom": "^0.14.0"
   },
   "engines": {
-    "node": ">=0.10.0"
+    "node": ">=3.3.0"
   },
   "browserify-shim": {
     "jquery": "global:$"
   },
   "scripts": {
-    "test": "node ./node_modules/jest-cli/bin/jest.js",
-    "lint": "eslint . --ext .js --ext .jsx ./app"
+    "build": "webpack",
+    "lint": "eslint --ext .js --ext .jsx ./app/",
+    "start": "webpack-dev-server --hot --inline --progress --content-base build",
+    "test": "node ./node_modules/jest-cli/bin/jest.js"
+  },
+  "babel": {
+    "stage": 1
   },
   "jest": {
     "rootDir": "./app/assets/javascripts/components",
@@ -51,6 +73,11 @@
   },
   "eslintConfig": {
     "parser": "babel-eslint",
+    "ecmaFeatures": {
+      "blockBindings": true,
+      "forOf": true,
+      "jsx": true
+    },
     "env": {
       "browser": true,
       "builtin": true,

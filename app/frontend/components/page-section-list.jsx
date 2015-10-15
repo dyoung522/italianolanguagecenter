@@ -1,8 +1,8 @@
-var PageSection  = require('components/page-section'),
-    React        = require('react'),
-    sectionStore = require('stores/section-store');
+import PageSection  from './page-section.jsx';
+import React        from 'react';
+import sectionStore from '../stores/section-store.jsx';
 
-module.exports = React.createClass({
+export default React.createClass({
 
   getInitialState: function() {
     return { data: sectionStore.getList() };
@@ -23,14 +23,9 @@ module.exports = React.createClass({
   },
 
   _renderSection: function(section) {
-    console.log('Rendering', section);
     return (
       <section key={section.id} id={section.name} className={[section.name + '-section', 'page-section'].join(' ')}>
-        <div className="col-sm-6 col-md-offset-3">
-          <div className="col-sm-12">
-            <PageSection section={section}/>
-          </div>
-        </div>
+        <PageSection section={section}/>
       </section>
     )
   },

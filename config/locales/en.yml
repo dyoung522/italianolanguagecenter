@@ -23,3 +23,21 @@ en:
       - "No pro aeterno fuisset. Nihil minimum suscipit ut has, te laoreet iudicabit pro. Has no simul dicunt complectitur. In suas rebum adipiscing vel, et eos insolens petentium mediocritatem, id usu error scripta. Sit ornatus appellantur te. Te vis nonumy everti phaedrum, te ubique consectetuer nec."
       - "Habeo impetus erroribus has ne. Est eu omnes mollis constituto, at vero dicam appellantur eam. Ei decore dolore has. An mei quis illud delicata, ut graece reprimique voluptatibus qui."
       - "Suscipit tractatos complectitur ea cum, te vix singulis splendide. Solet omittantur no vim, errem efficiendi usu id. Ea mea repudiare signiferumque, no vis quot audiam deserunt. Et quo suas option, erat invenire salutatus an sea. Has commodo albucius facilisis et, id velit graece vix."
+  classes:
+    begin: 'Begins on'
+    beginner:
+      title: "Beginning Italian"
+      description:
+        - "This is an introductionary course on Italian."
+        - "Lorem ipsum dolor sit amet, et usu movet recusabo. Et tibique dissentias definitionem cum, per labitur referrentur ut. No nullam intellegam sed, at solet maiorum mea, in solet volumus invenire mel. No usu accumsan postulant theophrastus, noster tamquam accusam ad vis."
+      recommended: "Recommended for those who have never studied italian before."
+    intermediate:
+      title: "Intermediate Italian"
+      description:
+        - "This is an intermediate course on Italian."
+      recommended: "Recommended for those who already understand the basics of italiano."
+    advanced:
+      title: "Advanced Italian"
+      description:
+        - "This is an advanced course on Italian"
+      recommended: "Recommended for those who are already profecient in Italiano and wish to become fluent."

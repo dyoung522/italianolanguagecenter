@@ -1,0 +1,2 @@
+webpack: $(npm bin)/webpack --watch --colors --content-base build
+server: bundle exec puma -C config/puma.rb

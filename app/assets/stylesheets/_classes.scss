@@ -1,0 +1,23 @@
+.classes {
+  padding: 20px;
+  margin-bottom: 25px;
+
+  .starts {
+    font-weight: bold;
+    float: right;
+    color: $brand-color4;
+  }
+
+  .title {
+    @extend h2;
+    display: block;
+    margin: 0 0 10px 0;
+  }
+
+  .recommended {
+    display: block;
+    margin-top: 10px;
+    font-style: italic;
+    color: $brand-color3;
+  }
+}

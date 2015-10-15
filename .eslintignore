@@ -1,0 +1,3 @@
+public/
+./app/assets/javascripts/fe/
+webpack.config.*.js
