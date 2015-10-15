@@ -25,11 +25,7 @@ export default React.createClass({
   _renderSection: function(section) {
     return (
       <section key={section.id} id={section.name} className={[section.name + '-section', 'page-section'].join(' ')}>
-        <div className="col-sm-6 col-md-offset-3">
-          <div className="col-sm-12">
-            <PageSection section={section}/>
-          </div>
-        </div>
+        <PageSection section={section}/>
       </section>
     )
   },

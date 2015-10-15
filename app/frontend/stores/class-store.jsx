@@ -1,5 +1,5 @@
-import appConstants  from '../dispathcer/constants';
-import AppDispatcher from '../dispatcher/dispatcher';
+import appConstants  from '../dispatcher/constants.jsx';
+import AppDispatcher from '../dispatcher/dispatcher.jsx';
 import objectAssign  from 'object-assign';
 import { EventEmitter } from 'events';
 
@@ -7,7 +7,9 @@ var CHANGE_EVENT = 'change';
 
 var _store = {
   classes: [
-    { id: 1, description: 'This is a class' }
+    { id: 1, key: 'beginner',     starts: '2016-01-02' },
+    { id: 2, key: 'intermediate', starts: '2016-02-01' },
+    { id: 3, key: 'advanced',     starts: '2016-03-01' }
   ]
 };
 

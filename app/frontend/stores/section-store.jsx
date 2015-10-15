@@ -7,9 +7,7 @@ var CHANGE_EVENT = 'change';
 
 var _store = {
   sections: [
-    { id: 1, name: 'classes' },
-    { id: 2, name: 'events' },
-    { id: 3, name: 'more' }
+    { id: 1, name: 'classes' }
   ]
 };
 
