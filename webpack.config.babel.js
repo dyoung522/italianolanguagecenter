@@ -23,6 +23,7 @@ var common = {
     ]
   },
 
+
   plugins: [
     new Clean(['app/assets/javascripts/fe'])
   ]

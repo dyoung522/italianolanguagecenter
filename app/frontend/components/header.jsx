@@ -47,13 +47,13 @@ var Header = React.createClass({
             <ul className="nav navbar-nav navbar-right">
               <li><a className="login" href="#login">{I18n.t('menu.login')}</a></li>
               <li>
-                <a type="button" className="language-flag" href="?locale=en" onClick={this.changeLocale('en')}>
-                  <img src="/assets/english-flag.png" alt="english"/>
+                <a className="language-flag" href="?locale=en" onClick={this.changeLocale('en')}>
+                  <img src="english-flag.png" alt="italiano"/>
                 </a>
               </li>
               <li>
-                <a type="button" className="language-flag" href="?locale=it" onClick={this.changeLocale('it')}>
-                  <img src="/assets/italian-flag.png" alt="italiano"/>
+                <a className="language-flag" href="?locale=it" onClick={this.changeLocale('it')}>
+                  <img src="italian-flag.png" alt="italiano"/>
                 </a>
               </li>
             </ul>
