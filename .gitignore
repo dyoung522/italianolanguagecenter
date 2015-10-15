@@ -15,3 +15,4 @@
 /public/assets
 /npm-debug.log
 /railways.cache
+*.js.map
